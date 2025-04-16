@@ -1,0 +1,366 @@
+{
+  "topics": [
+    {
+      "id": "t001",
+      "title": "Basic Programming Concepts",
+      "description": "Learn fundamental programming concepts including variables, data types, and control structures.",
+      "img": "programming.png",
+      "quizzes": [
+        {
+          "id": "q001",
+          "title": "Variables and Data Types",
+          "description": "Test your knowledge of programming variables and data types."
+        },
+        {
+          "id": "q002",
+          "title": "Control Structures",
+          "description": "Explore conditional statements and loops in programming."
+        }
+      ]
+    },
+    {
+      "id": "t002",
+      "title": "Web Development Basics",
+      "description": "Understand the fundamentals of web development including HTML, CSS, and JavaScript.",
+      "img": "webdev.png",
+      "quizzes": [
+        {
+          "id": "q003",
+          "title": "HTML Fundamentals",
+          "description": "Master the basics of HTML document structure and elements."
+        },
+        {
+          "id": "q004",
+          "title": "CSS Styling",
+          "description": "Learn how to style web pages using CSS."
+        }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "q001",
+      "description": "Variables and Data Types: Test your understanding of different data types and how variables work in programming.",
+      "questions": [
+        {
+          "text": "Which of the following is NOT a primitive data type in JavaScript?",
+          "options": [
+            {
+              "value": "Array",
+              "correct": true,
+              "details": "Arrays are composite data types (objects) in JavaScript, not primitive data types."
+            },
+            {
+              "value": "Number",
+              "correct": false,
+              "details": "Number is a primitive data type in JavaScript that represents both integer and floating-point values."
+            },
+            {
+              "value": "Boolean",
+              "correct": false,
+              "details": "Boolean is a primitive data type in JavaScript that can be either true or false."
+            },
+            {
+              "value": "String",
+              "correct": false,
+              "details": "String is a primitive data type in JavaScript that represents text data."
+            }
+          ]
+        },
+        {
+          "text": "What is the result of the expression '5' + 2 in JavaScript?",
+          "options": [
+            {
+              "value": "'52'",
+              "correct": true,
+              "details": "In JavaScript, when a string and a number are added, the number is converted to a string and they are concatenated."
+            },
+            {
+              "value": "7",
+              "correct": false,
+              "details": "This would be the result if both operands were numbers, but '5' is a string."
+            },
+            {
+              "value": "Error",
+              "correct": false,
+              "details": "JavaScript does not throw an error when adding a string and a number."
+            },
+            {
+              "value": "'7'",
+              "correct": false,
+              "details": "JavaScript does not automatically convert the string to a number when using the + operator."
+            }
+          ]
+        },
+        {
+          "text": "Which statement about variables is correct?",
+          "options": [
+            {
+              "value": "Variables are used to store data values that can be changed later in the program",
+              "correct": true,
+              "details": "Variables serve as containers for data values that can be accessed and modified throughout a program's execution."
+            },
+            {
+              "value": "Variables must always be declared with a specific data type",
+              "correct": false,
+              "details": "This is true in statically-typed languages, but not in dynamically-typed languages like JavaScript."
+            },
+            {
+              "value": "Variables cannot change their data type once declared",
+              "correct": false,
+              "details": "In dynamically-typed languages, variables can change their data type during execution."
+            },
+            {
+              "value": "Variables must be initialized with a value when declared",
+              "correct": false,
+              "details": "Variables can be declared without initialization, in which case they are assigned a value of undefined in JavaScript."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q002",
+      "description": "Control Structures: Learn about if statements, loops, and other constructs that control program flow.",
+      "questions": [
+        {
+          "text": "Which loop is best suited for iterating a fixed number of times?",
+          "options": [
+            {
+              "value": "for loop",
+              "correct": true,
+              "details": "The for loop is designed for iterating a specific number of times, with initialization, condition, and increment expressions built in."
+            },
+            {
+              "value": "while loop",
+              "correct": false,
+              "details": "While loops are better suited for situations where the number of iterations is not known in advance."
+            },
+            {
+              "value": "do-while loop",
+              "correct": false,
+              "details": "Do-while loops are similar to while loops but always execute at least once, regardless of the condition."
+            },
+            {
+              "value": "forEach loop",
+              "correct": false,
+              "details": "forEach is an array method, not a general-purpose loop construct, though it is useful for iterating through arrays."
+            }
+          ]
+        },
+        {
+          "text": "What is the purpose of an if-else statement?",
+          "options": [
+            {
+              "value": "To execute different code blocks based on different conditions",
+              "correct": true,
+              "details": "If-else statements allow programs to execute different code paths depending on whether a condition evaluates to true or false."
+            },
+            {
+              "value": "To loop through a block of code multiple times",
+              "correct": false,
+              "details": "This is the purpose of loop constructs like for, while, and do-while, not if-else statements."
+            },
+            {
+              "value": "To define functions within a program",
+              "correct": false,
+              "details": "Functions are defined using function declarations or expressions, not if-else statements."
+            },
+            {
+              "value": "To catch and handle errors in a program",
+              "correct": false,
+              "details": "Error handling is typically done with try-catch blocks, not if-else statements."
+            }
+          ]
+        },
+        {
+          "text": "What will the following code output? for(let i=0; i<3; i++) { console.log(i); }",
+          "options": [
+            {
+              "value": "0\n1\n2",
+              "correct": true,
+              "details": "The loop initializes i to 0, continues as long as i is less than 3, and increments i by 1 each iteration, printing values 0, 1, and 2."
+            },
+            {
+              "value": "1\n2\n3",
+              "correct": false,
+              "details": "This would be the output if the loop started with i=1 or used i<=3 as the condition."
+            },
+            {
+              "value": "0\n1\n2\n3",
+              "correct": false,
+              "details": "The loop condition is i<3, so it stops before i reaches 3."
+            },
+            {
+              "value": "3\n2\n1",
+              "correct": false,
+              "details": "This would be the output if the loop initialized i to 3, had i>0 as the condition, and decremented i each iteration."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q003",
+      "description": "HTML Fundamentals: Understand the basic structure and elements of HTML documents.",
+      "questions": [
+        {
+          "text": "Which tag is used to define the main content of an HTML document?",
+          "options": [
+            {
+              "value": "<body>",
+              "correct": true,
+              "details": "The <body> element contains all the content that is visible to users, such as text, images, links, tables, etc."
+            },
+            {
+              "value": "<head>",
+              "correct": false,
+              "details": "The <head> element contains meta-information about the document, like title, styles, scripts, and links to external resources."
+            },
+            {
+              "value": "<main>",
+              "correct": false,
+              "details": "While <main> is used for the main content of a page, it exists within the <body> element, which defines the entire visible document."
+            },
+            {
+              "value": "<div>",
+              "correct": false,
+              "details": "The <div> element is a generic container for flow content, not specifically for defining the main document content."
+            }
+          ]
+        },
+        {
+          "text": "What is the correct HTML for creating a hyperlink?",
+          "options": [
+            {
+              "value": "<a href=\"https://example.com\">Link text</a>",
+              "correct": true,
+              "details": "The <a> (anchor) element with the href attribute is used to create hyperlinks in HTML."
+            },
+            {
+              "value": "<link href=\"https://example.com\">Link text</link>",
+              "correct": false,
+              "details": "The <link> element is used to link external resources like stylesheets, not to create hyperlinks."
+            },
+            {
+              "value": "<href=\"https://example.com\">Link text</href>",
+              "correct": false,
+              "details": "There is no <href> element in HTML."
+            },
+            {
+              "value": "<url>https://example.com</url>",
+              "correct": false,
+              "details": "There is no <url> element in HTML."
+            }
+          ]
+        },
+        {
+          "text": "Which element is used to create a list where each item is numbered?",
+          "options": [
+            {
+              "value": "<ol>",
+              "correct": true,
+              "details": "The <ol> (ordered list) element creates a numbered list, with <li> elements as list items."
+            },
+            {
+              "value": "<ul>",
+              "correct": false,
+              "details": "The <ul> (unordered list) element creates a bulleted list, not a numbered list."
+            },
+            {
+              "value": "<dl>",
+              "correct": false,
+              "details": "The <dl> (description list) element creates a list of terms and descriptions, not a numbered list."
+            },
+            {
+              "value": "<list>",
+              "correct": false,
+              "details": "There is no <list> element in HTML."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q004",
+      "description": "CSS Styling: Learn how to use CSS to style HTML elements and create visually appealing web pages.",
+      "questions": [
+        {
+          "text": "Which CSS property is used to change the text color of an element?",
+          "options": [
+            {
+              "value": "color",
+              "correct": true,
+              "details": "The color property is used to set the color of text content in an element."
+            },
+            {
+              "value": "text-color",
+              "correct": false,
+              "details": "There is no text-color property in CSS. The correct property is color."
+            },
+            {
+              "value": "font-color",
+              "correct": false,
+              "details": "There is no font-color property in CSS. The correct property is color."
+            },
+            {
+              "value": "background-color",
+              "correct": false,
+              "details": "The background-color property sets the background color of an element, not the text color."
+            }
+          ]
+        },
+        {
+          "text": "How do you select an element with the ID 'header' in CSS?",
+          "options": [
+            {
+              "value": "#header",
+              "correct": true,
+              "details": "The hash (#) symbol is used to select elements by ID in CSS."
+            },
+            {
+              "value": ".header",
+              "correct": false,
+              "details": "The dot (.) symbol is used to select elements by class, not ID."
+            },
+            {
+              "value": "header",
+              "correct": false,
+              "details": "Without a prefix, this would select all elements with the tag name 'header'."
+            },
+            {
+              "value": "*header",
+              "correct": false,
+              "details": "The asterisk (*) is a universal selector that selects all elements, not a specific ID."
+            }
+          ]
+        },
+        {
+          "text": "Which CSS property is used to add space between the border and content of an element?",
+          "options": [
+            {
+              "value": "padding",
+              "correct": true,
+              "details": "The padding property adds space between an element's border and its content."
+            },
+            {
+              "value": "margin",
+              "correct": false,
+              "details": "The margin property adds space outside an element's border, not between the border and content."
+            },
+            {
+              "value": "spacing",
+              "correct": false,
+              "details": "There is no spacing property in CSS."
+            },
+            {
+              "value": "border-spacing",
+              "correct": false,
+              "details": "The border-spacing property is used for table cells spacing, not for space between border and content."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
