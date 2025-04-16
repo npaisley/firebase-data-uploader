@@ -1,0 +1,26 @@
+{
+  "name": "firebase-quiz-uploader",
+  "version": "1.0.0",
+  "description": "Tool to upload quiz data to Firebase",
+  "main": "upload.js",
+  "scripts": {
+    "upload": "node upload.js",
+    "upload:data": "node upload.js ./data/*.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "firebase-admin": "^13.2.0",
+    "glob": "^11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npaisley/firebase-data-uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npaisley/firebase-data-uploader/issues"
+  },
+  "homepage": "https://github.com/npaisley/firebase-data-uploader#readme"
+}

@@ -5,7 +5,7 @@ const path = require('path');
 const glob = require('glob');
 
 // Load environment variables from .env file
-dotenv.config();
+dotenv.config({path: './config/.env'});
 
 // Default data directory if no specific files are provided
 const DEFAULT_DATA_DIR = './data';
